@@ -1,0 +1,12 @@
+:root{
+    --verde: #013C31
+    --bege: #F8F5DF
+    --laranja: #FD750A
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    background-color: var(--verde);
+}
