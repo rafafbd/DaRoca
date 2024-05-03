@@ -1,12 +1,21 @@
 :root{
-    --verde: #013C31
-    --bege: #F8F5DF
-    --laranja: #FD750A
+    --verde: #013C31;
+    --bege: #F8F5DF;
+    --laranja: #FD750A;
+}
+
+body{
+    margin: 0px;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    flex-flow: row nowrap;
+    width: 100%;
+    margin: 0px;
     background-color: var(--verde);
+}
+
+#logo{
+    height: 100px;
 }
