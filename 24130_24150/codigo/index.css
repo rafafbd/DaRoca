@@ -6,6 +6,7 @@
 
 body{
     margin: 0px;
+    background-color: beige;
 }
 *{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -22,6 +23,7 @@ header{
 
 #logo{
     height: 100px;
+    margin-left: 10px;
 }
 
 #nav{
@@ -41,6 +43,7 @@ header{
 #container-botoes{
     display: flex;
     gap: 10px;
+    margin-right: 10px;
 }
 
 #inscrever{
@@ -58,6 +61,46 @@ header{
 }
 
 main{
-    background-color: beige;
+    display: flex;
+    justify-content: center;
 }
 
+#pesquisa{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+#lupa{
+    height: 40px ;
+}
+#container-barra-pesquisa{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#barra-pesquisa{
+    border-radius: 10px;
+    margin-left: 10px;
+    border: 1px solid var(--laranja);
+}
+#barra-pesquisa:focus{
+    background-color: rgb(231, 229, 229);
+}
+
+#nav-produto{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+.tipo-produto{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.tipo-produto:hover{
+    background-color: lightgray;
+    border-bottom: 3px solid var(--laranja);
+}
