@@ -6,14 +6,23 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   color: rgb(0, 0, 0);
-   display: flex;
-   
+    color: rgb(0, 0, 0);
+    display: flex;
+    background-color: beige;
 }
+
 #imagem{
-     height: 100%;
-        background-image: url(vegetais.png) ;
-        width: 50%;
+    height: 100vh;
+    background-image: url(vegetais.png) ;
+    color: var(--laranja);
+    background-size: cover;
+    width: 40%;
+    justify-items: center;
+    filter: brightness(0.60) opacity(0.75);
+}
+h1{
+    background-color: var(--laranja);
+    color: white;
 }
 
 form{
@@ -23,9 +32,16 @@ form{
     padding: 10px;
     border: 10px solid var(--verde)
 }
-h1{
-    text-align: center;
+
+button{
+    background-color: var(--laranja);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
 }
+
 input[type=text],
 input[type=number],
 input[type=email]{
@@ -34,7 +50,7 @@ input[type=email]{
 input[type=text]:focus,
 input[type=number]:focus,
 input[type=email]:focus{
-    background-color: rgb(255,116,13)
+    background-color: beige
 }
 button{
     margin-left: 240px; 
