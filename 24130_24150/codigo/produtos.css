@@ -95,6 +95,7 @@ header{
     margin: 0;
     padding: 0;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .tipo-produto{
@@ -112,7 +113,8 @@ header{
     width: 80%;
     display: flex;
     flex-flow: row wrap;
-    background-color: aliceblue;
+    justify-content: space-evenly;
+    margin: auto;
     gap: 10px;
 }
 
@@ -120,16 +122,47 @@ header{
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
-    border: 3px solid lightsteelblue;
+    border: 3px solid var(--verde);
     border-radius: 5px;
-    
+    margin-left: 20px;
+    width: 20%;
 }
 
 .imagem-produto{
     height: 100px;
 }
 
-.botao-adicionar{
-    background-color: red;
+.container-adicionar{
+    background-color: var(--laranja);
+    display: flex;
+    justify-content: space-between ;
+    gap: 10px;
 }
 
+.quantos-itens{
+    width: 30px;
+}
+
+#container-carrinho{
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#icone-de-carrinho{
+    height: 30px;
+}
+
+#botao-carrinho{
+background-color: var(--verde);
+border-radius: 5px;
+text-decoration: none;
+color: var(--laranja);
+font-size: 20px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
