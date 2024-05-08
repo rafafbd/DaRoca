@@ -62,6 +62,10 @@ main{
     justify-content: center;
 }
 
+details{
+    margin: auto;
+}   
+
 #agendar{
     display: none;
 }
