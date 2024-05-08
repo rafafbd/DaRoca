@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="produtos.css">
+    <script src="produtos.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,15 @@
         </div>
     </header>
     <main>
+        <details>
+            <summary>Quer agendar suas entregas?</summary>
+                <form action="">
+                    <input type="radio" value="semanal" name="opcao">Semanal
+                    <input type="radio" value="quinzenal" name="opcao">Quinzenal
+                    <input type="radio" value="mensal" name="opcao">Mensal
+                </form>
+        </details>
+        
         <div id = 'conteudo'>
             <div id="container-barra-pesquisa">
                 <label for=""><img src="/lupa.png" alt="" id="lupa"></label>
@@ -78,6 +88,7 @@
             </a>
         </div>
     </main>
+    
 </body>
 
 </html>

@@ -55,6 +55,17 @@ header{
     padding: 2px 15px;
     border-radius: 15px;
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#agendar{
+    display: none;
+}
+
 #conteudo{
     display: flex;
     flex-flow: column nowrap;
@@ -66,19 +77,23 @@ header{
     flex-flow: column wrap;
     justify-content: center;
 }
+
 #lupa{
     height: 40px ;
 }
+
 #container-barra-pesquisa{
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
+
 #barra-pesquisa{
     border-radius: 10px;
     margin-left: 10px;
     border: 1px solid var(--laranja);
 }
+
 #barra-pesquisa:focus{
     background-color: rgb(231, 229, 229);
 }
