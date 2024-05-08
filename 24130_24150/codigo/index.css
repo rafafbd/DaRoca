@@ -5,7 +5,6 @@
 
 body{
     margin: 0px;
-    background-color: beige;
 }
 *{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -72,6 +71,7 @@ header{
 }
 
 main{
+    background-color: beige;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,46 +79,84 @@ main{
 
 #pesquisa{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
+    align-items: center ;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 50px;
 }
 #lupa{
     height: 40px ;
 }
+
 #container-barra-pesquisa{
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
+
 #barra-pesquisa{
     border-radius: 10px;
     margin-left: 10px;
     border: 1px solid var(--laranja);
+    width: 100%;
 }
-
-#checkbox{
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-#display-itens{
-    background-color: red;
-}
-
-
 
 #sobre{
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 10px;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
 }
 
 #texto{
     width: 50%;
 }
 
+#titulo{
+    width: 70%;
+    border-bottom: 1px solid black;
+}
+
+#paragrafo-sobre{
+    font-size: 25px;
+}
+
+span{
+    color: var(--laranja);
+    font-weight: bold;
+}
+
 #imagem{
     width: 40%;
+}
+
+footer{
+    background-color: rgb(92, 86, 86);
+    display: flex;
+}
+
+#container-info-footer{
+    margin-left: 10px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+}
+
+.info-footer{
+    text-decoration: none;
+    color: white;
+}
+
+#redes-sociais{
+    width: 30%;
+}
+
+#logo-youtube{
+    height: 20px;
 }
