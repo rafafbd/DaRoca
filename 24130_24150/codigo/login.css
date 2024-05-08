@@ -8,29 +8,42 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(0, 0, 0);
     display: flex;
-    background-color: beige;
+    background-color:var(--verde)
 }
 
 #imagem{
     height: 100vh;
     background-image: url(vegetais.png) ;
-    color: var(--laranja);
     background-size: cover;
     width: 40%;
     justify-items: center;
     filter: brightness(0.60) opacity(0.75);
 }
+
+#estruturaDoLogin{
+    align-self: center;
+    margin-left: 10vh;
+}
 h1{
     background-color: var(--laranja);
     color: white;
+    margin: auto;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    width: 350px;
+    padding: 5px;
+    text-align: center;
 }
 
 form{
-    width: 500px;
+    width: 350px;
     background-color: rgb(255, 255, 255) ;
     margin: auto;
-    padding: 10px;
-    border: 10px solid var(--verde)
+    padding: 5px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    text-align: center;
+    color: var(--laranja);
 }
 
 button{
@@ -40,19 +53,18 @@ button{
     height: 40px;
     border: none;
     border-radius: 5px;
+    
 }
 
 input[type=text],
-input[type=number],
+input[type=password],
 input[type=email]{
-    padding: 5px;
+    width: 80%;
+    padding: 5px;   
 }
 input[type=text]:focus,
-input[type=number]:focus,
+input[type=password]:focus,
 input[type=email]:focus{
     background-color: beige
 }
-button{
-    margin-left: 240px; 
-    border: 1px black outset;
-}
+
