@@ -110,4 +110,15 @@ main{
 
 #sobre{
     display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#texto{
+    width: 50%;
+}
+
+#imagem{
+    width: 40%;
 }
