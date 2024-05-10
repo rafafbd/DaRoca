@@ -5,6 +5,7 @@
 
 body{
     margin: 0px;
+    background-color: beige;
 }
 *{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -71,7 +72,6 @@ header{
 }
 
 main{
-    background-color: beige;
     display: flex;
     flex-direction: column;
     justify-content: center;
