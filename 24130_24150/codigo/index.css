@@ -77,22 +77,6 @@ main{
     justify-content: center;
 }
 
-#pesquisa{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center ;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-bottom: 50px;
-}
-#lupa{
-    height: 40px ;
-}
-
 #container-barra-pesquisa{
     width: 50%;
     margin-top: 10px;
@@ -100,9 +84,21 @@ main{
     justify-content: center;
 }
 
+#pesquisa{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 50px;
+}
+#lupa{
+    height: 40px ;
+}
+
 #form-pesquisa{
     display: flex;
     width: 50%;
+    padding-right: 20px;
 }
 
 #barra-pesquisa{
@@ -123,6 +119,7 @@ main{
 #sobre{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     width: 80%;
     margin: auto;
     gap: 20px;

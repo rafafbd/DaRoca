@@ -13,7 +13,7 @@
     <header>
         <div id='conteudo-header'>
             <a href="index.html"><img src="/DaRoca.png" alt="" id='logo'></a>
-            
+
             <div id='container-botoes'>
                 <a href="signup.html" id='inscrever'>Inscrever-se</a>
                 <a href="login.html" id='entrar'>Entrar</a>
@@ -21,73 +21,69 @@
         </div>
     </header>
     <main>
-        <div id = 'container-agendar'>
-            <form action="" id = 'opcoes-'>
-                <input type="radio" value="semanal" name="opcao">Semanal
-                <input type="radio" value="quinzenal" name="opcao">Quinzenal
-                <input type="radio" value="mensal" name="opcao">Mensal
-            </form>
-        </div>
-        
-        <div id = 'conteudo'>
+
+        <div id='conteudo'>
             <div id="container-barra-pesquisa">
-                <label for=""><img src="/lupa.png" alt="" id="lupa"></label>
-                <input type="text" placeholder="pesquisar"id = 'barra-pesquisa'>
+                <form action="" id = "form-pesquisa">
+                    <label for=""><img src="/lupa.png" alt="" id="lupa"></label>
+                    <input type="text" placeholder="Digite o nome do produto desejado" id='barra-pesquisa'>
+                    <button type="submit" id = 'entrega-pesquisa'>Pesquisar</button>
+                </form>
             </div>
-            <div id = 'container-nav-produto'>
+            <div id='container-nav-produto'>
                 <ul id="nav-produto">
                     <li><a href="#" class='tipo-produto'>Vegetais</a></li>
                     <li><a href="#" class='tipo-produto'>Verduras</a></li>
                     <li><a href="#" class='tipo-produto'>Frutas</a></li>
                 </ul>
             </div>
-            <div class = 'display-produtos' id ='vegetais'>
-                <div class = 'produto' class = 'vegetal'>
-                    <img src="/brocolis-cabeca.png" alt="" class = 'imagem-produto'>
-                    <div class = 'produto-info'>
+            <div class='display-produtos'>
+                <div class='produto' class='vegetal'>
+                    <img src="/brocolis-cabeca.png" alt="" class='imagem-produto'>
+                    <div class='produto-info'>
                         <p>NOME: Brócolis</p>
                         <p>UNIDADE: kg</p>
                         <p>PREÇO: 10,00</p>
                     </div>
-                    <div class = 'container-adicionar'>
-                        <a class = 'botao-adicionar'>Adicionar ao carrinho</a>
-                        <input type="number" class = 'quantos-itens'>
+                    <div class='container-adicionar'>
+                        <a class='botao-adicionar'>Adicionar à cesta</a>
+                        <input type="number" class='quantos-itens'>
                     </div>
                 </div>
-                <div class = 'produto' class = 'vegetal'>
-                    <img src="/Cenoura.png" alt="" class = 'imagem-produto'>
-                    <div class = 'produto-info'>
+                <div class='produto' class='vegetal'>
+                    <img src="/Cenoura.png" alt="" class='imagem-produto'>
+                    <div class='produto-info'>
                         <p>NOME: Cenoura</p>
                         <p>UNIDADE: unidade</p>
                         <p>PREÇO: 10,00</p>
                     </div>
-                    <div class = 'container-adicionar'>
-                        <a class = 'botao-adicionar'>Adicionar ao carrinho</a>
-                        <input type="number" class = 'quantos-itens'>
+                    <div class='container-adicionar'>
+                        <a class='botao-adicionar'>Adicionar à cesta</a>
+                        <input type="number" class='quantos-itens'>
                     </div>
                 </div>
-                <div class = 'produto' class = 'vegetal'>
-                    <img src="/banana-nanica.png" alt="" class = 'imagem-produto'>
-                    <div class = 'produto-info'>
+                <div class='produto' class='vegetal'>
+                    <img src="/banana-nanica.png" alt="" class='imagem-produto'>
+                    <div class='produto-info'>
                         <p>NOME: banana nanica</p>
                         <p>UNIDADE: unidade</p>
                         <p>PREÇO: 10,00</p>
                     </div>
-                    <div class = 'container-adicionar'>
-                        <a class = 'botao-adicionar'>Adicionar ao carrinho</a>
-                        <input type="number" class = 'quantos-itens'>
+                    <div class='container-adicionar'>
+                        <a class='botao-adicionar'>Adicionar à cesta</a>
+                        <input type="number" class='quantos-itens'>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
-        <div id = 'container-carrinho'>
-            <a href="carrinho.html" id = 'botao-carrinho'>
-                <img src="/icone-de-carrinho.png" alt="" id = 'icone-de-carrinho'>Abrir carrinho
+        <div id='container-cesta'>
+            <a href="cesta.html" id='botao-cesta'>
+                <img src="/icone-de-cesta.png" alt="" id='icone-de-cesta'>Abrir cesta
             </a>
         </div>
     </main>
-    
+
 </body>
 
 </html>

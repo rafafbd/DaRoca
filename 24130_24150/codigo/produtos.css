@@ -65,33 +65,46 @@ main{
 #conteudo{
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-}
-
-#pesquisa{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
-
-#lupa{
-    height: 40px ;
 }
 
 #container-barra-pesquisa{
+    width: 50%;
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 
-#barra-pesquisa{
-    border-radius: 10px;
-    margin-left: 10px;
-    border: 1px solid var(--laranja);
+#pesquisa{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 50px;
+    width: 50%;
+}
+#lupa{
+    height: 40px ;
 }
 
-#barra-pesquisa:focus{
-    background-color: rgb(231, 229, 229);
+#form-pesquisa{
+    display: flex;
+    width: 50%;
+    padding-right: 20px;
+}
+
+#barra-pesquisa{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 10px;
+    border: 1px solid var(--laranja);
+    width: 100%;
+}
+
+#entrega-pesquisa{
+    background-color: var(--laranja);
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #container-nav-produto{
@@ -154,7 +167,7 @@ main{
     width: 30px;
 }
 
-#container-carrinho{
+#container-cesta{
     margin: auto;
     width: 40%;
     display: flex;
@@ -162,18 +175,20 @@ main{
     margin-top: 100px;
 }
 
-#icone-de-carrinho{
+#icone-de-cesta{
     height: 30px;
 }
 
-#botao-carrinho{
-background-color: var(--verde);
-border-radius: 5px;
-text-decoration: none;
-color: var(--laranja);
-font-size: 20px;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+#botao-cesta{
+    background-color: var(--verde);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--laranja);
+    font-size: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
 }
