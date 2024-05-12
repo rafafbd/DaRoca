@@ -1,1 +1,45 @@
+:root{
+    --verde: #013C31;
+    --laranja: rgb(255,116,13);
+}
 
+body{
+    background-color: beige;
+}
+
+#seta{
+    height: 50px;
+    margin: 10px 0 0 10px;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+}
+
+#pedido{
+    margin: auto;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
+#total{
+    display: flex;
+    justify-content: center;
+}
+
+#forma-pagamento{
+    display: flex;
+    justify-content: center;
+}
+
+#selecionar-pagamento{
+    width: 10%;
+}

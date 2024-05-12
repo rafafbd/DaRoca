@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="cesta.css">
 </head>
+
 <body>
-    
+    <header>
+        <a href="produtos.html">
+            <img src="/seta.png" alt="" id='seta'>
+        </a>
+        
+    </header>
+    <main>
+        <div id = 'titulo'>
+            <h1>Seu pedido:</h1>
+        </div>
+        
+        <div id='pedido'>
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preco</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Batata</td>
+                    <td>5 Kg</td>
+                    <td>10000000,00 R$</td>
+                    <td>excluir</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>70 cachos</td>
+                    <td>51,00 R$</td>
+                    <td>excluir</td>
+                </tr>
+                <tr>
+                    <td>Cenoura</td>
+                    <td>5 duzias</td>
+                    <td>1,99 R$</td>
+                    <td>excluir</td>
+                </tr>
+            </table>
+        </div>
+        <div id = 'total'>
+            <h3>Total: 15000000 R$</h3>
+        </div>
+
+        <div id = 'forma-pagamento'>
+            <p>Selecione a forma de pagamento: </p>
+            <select name="" id="selecionar-pagamento">
+                <option value="">-</option>
+                <option value="">Cartao de credito</option>
+                <option value="">pix</option>
+                <option value="">Cartao de debito</option>
+            </select>
+        </div>
+
+    </main>
 </body>
+
 </html>
