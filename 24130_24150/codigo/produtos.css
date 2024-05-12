@@ -17,6 +17,7 @@ header{
     width: 100%;
     margin: 0px;
     background-color: var(--verde);
+    margin-bottom: 25px;
 }
 
 #conteudo-header{
@@ -65,13 +66,14 @@ main{
 #conteudo{
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
 }
 
 #container-barra-pesquisa{
     width: 50%;
-    margin-top: 10px;
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 #pesquisa{
@@ -140,13 +142,14 @@ main{
     justify-content: space-evenly;
     margin: auto;
     gap: 10px;
+    background-color: aliceblue;
 }
 
 .produto{
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
-    border: 3px solid var(--verde);
+    border: 3px solid var(--laranja) ;
     border-radius: 5px;
     margin-left: 20px;
     width: 20%;
