@@ -26,11 +26,15 @@
     </header>
     <main>
         <div id='pesquisa'>
-            <h1>Peça seus produtos</h1>
-            <p>Entregamos fresquinho na sua porta!</p>
+            <h1>Peça seus produtos!</h1>
+            <h4>Entregamos fresquinho na sua porta</h4>
             <div id="container-barra-pesquisa">
-                <label for=""><img src="/lupa.png" alt="" id="lupa"></label>
-                <input type="text" placeholder="pesquisar" id='barra-pesquisa'>
+                <form action="" id = "form-pesquisa">
+                    <label for=""><img src="/lupa.png" alt="" id="lupa"></label>
+                    <input type="text" placeholder="pesquisar" id='barra-pesquisa'>
+                    <button type="submit" id = 'entrega-pesquisa'>Pesquisar</button>
+                </form>
+                
             </div>
         </div>
         <div id='display-itens'>
@@ -47,7 +51,7 @@
                 </p>
             </div>
             <div id='imagem'>
-                <img src="/foto-da-natalia.png" alt="">
+                <img src="/foto-da-natalia.png" alt="" id = 'foto-da-natalia'>
             </div>
         </div>
     </main>
@@ -55,11 +59,17 @@
         <div id='container-info-footer'>
             <a href="" class='info-footer'>Legal</a>
             <a href="" class='info-footer'>Segurança</a>
+            <a href="" class = 'info-footer'>Ajuda</a>
         </div>
         <div id='redes-sociais'>
             <a href="https://www.youtube.com/" target="_blank">
-                <img src="/logo-youtube.png" alt="" id='logo-youtube'>
-                <a href="https://www."></a>
+                <img class='logo-rede-social' src="/logo-youtube.png" alt="" >
+            </a>
+            <a href="https://twitter.com/?lang=pt-br" target="_blank">
+                <img class = 'logo-rede-social' src="/logo-X.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img class = 'logo-rede-social' src="/logo-instagram.png" alt="">
             </a>
         </div>
     </footer>
