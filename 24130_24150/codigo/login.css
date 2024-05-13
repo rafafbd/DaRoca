@@ -13,7 +13,7 @@ body{
 
 #imagem{
     height: 100vh;
-    background-image: url(vegetais.png) ;
+    background-image: url(/imagens/vegetais.png) ;
     background-size: cover;
     width: 40%;
     justify-items: center;

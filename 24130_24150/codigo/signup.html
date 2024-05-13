@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
 </head>
 <body>
     
@@ -22,7 +23,7 @@
             
             <p>
                 <label>Nome:<br></label>
-            <input type="text">
+            <input type="text" id="nome">
             </p>
 
             <p>
@@ -32,16 +33,16 @@
         
             <p>
                 <label >Senha:<br></label>
-                <input type="password">
+                <input type="password" id="senha">
             </p>
 
             <p>
                 <label>Confirmar Senha:<br></label>
-                <input type="password">
+                <input type="password" id="confirm">
             </p>
             
             <p>
-                <button>Enviar</button>        
+                <button onclick="cadastro()">Enviar</button>        
             </p>
     </div>
 </body>
