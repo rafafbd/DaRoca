@@ -7,14 +7,18 @@ body{
     background-color: beige;
 }
 
+p, h1{
+    color: var(--verde);
+}
+
+.alinha-centro{
+    display: flex;
+    justify-content: center;
+}
+
 #seta{
     height: 50px;
     margin: 10px 0 0 10px;
-}
-
-#titulo{
-    display: flex;
-    justify-content: center;
 }
 
 #pedido{
@@ -30,16 +34,34 @@ table{
     border-spacing: 30px;
 }
 
-#total{
-    display: flex;
-    justify-content: center;
-}
-
-#forma-pagamento{
-    display: flex;
-    justify-content: center;
-}
-
 #selecionar-pagamento{
     width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+}
+
+#container-endereco{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#endereco{
+    width: 40%;
+    margin: auto;
+}
+
+#container-botao{
+    margin-top: 50px;
+}
+
+button{
+    
 }
