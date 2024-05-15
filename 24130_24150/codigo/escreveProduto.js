@@ -19,7 +19,7 @@ let write =
         "<div class='produto-info'>"+
             "<p>NOME: "+produtos[i].nome+"</p>"+
             "<p>UNIDADE: "+produtos[i].unidade+"</p>"+
-            "<p>PREÇO: "+produtos[i].precoPorUnidade+"</p>"+
+            "<p>PREÇO: "+produtos[i].precoPorUnidade+"R$</p>"+
         `</div>
         <div class='container-adicionar'>
             <button class = 'botao-adicionar'>Adicionar na cesta</button>`+
