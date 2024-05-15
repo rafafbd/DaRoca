@@ -5,6 +5,8 @@
 
 body{
     background-color: beige;
+    font-size: larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 p, h1{
@@ -27,6 +29,8 @@ p, h1{
     display: flex;
     justify-content: center;
     width: 70%;
+    border-radius: 20px;
+    
 }
 
 table{
@@ -63,5 +67,9 @@ form{
 }
 
 button{
-    
+    width: 150px;
+    height: 60px;
+    background-color: #013C31;
+    color: white;
+    border-radius: 30px;
 }

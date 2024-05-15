@@ -25,25 +25,28 @@
                 <tr>
                     <th>Produto</th>
                     <th>Quantidade</th>
-                    <th>Preco</th>
-                    <th></th>
+                    <th>Preço</th>
+                    <th>adicionar ou excluir</th>
                 </tr>
                 <tr>
                     <td>Batata</td>
                     <td>5 Kg</td>
                     <td>10000000,00 R$</td>
+                    <td>adicionar</td>
                     <td>excluir</td>
                 </tr>
                 <tr>
                     <td>Banana</td>
                     <td>70 cachos</td>
                     <td>51,00 R$</td>
+                    <td>adicionar</td>
                     <td>excluir</td>
                 </tr>
                 <tr>
                     <td>Cenoura</td>
                     <td>5 duzias</td>
                     <td>1,99 R$</td>
+                    <td>adicionar</td> 
                     <td>excluir</td>
                 </tr>
             </table>
@@ -51,30 +54,28 @@
         <div class = 'alinha-centro'>
             <h3>Total: 15000000 R$</h3>
         </div>
-
         <div class = 'alinha-centro'>
-            <p>Selecione a forma de pagamento: </p>
-            <select name="" id="selecionar-pagamento">
-                <option value="">-</option>
-                <option value="">Cartao de credito</option>
-                <option value="">pix</option>
-                <option value="">Cartao de debito</option>
+            <p class = 'alinha-centro'>Selecione a forma de pagamento: </p>
+            <form action="">
+                <input type="radio" name="pagamento">
+                <label for="pagamento">Cartão de credito</label>
+                <input type="radio" name="pagamento">
+                <label for="pagamento">pix</label>
+                <input type="radio" name="pagamento">
+                <label for="pagamento">Cartão de debito</label>
+            </form>
+        </div>
+        <div class = 'alinha-centro'>
+            <p>Selecione a frequência da entrega: </p>
+            <select name="" id="selecionar-frequencia">
+                <option value="">Compra única</option>
+                <option value="">Semanal</option>
+                <option value="">Quinzenal</option>
+                <option value="">Mensal</option>
             </select>
         </div>
 
-        <div class = 'alinha-centro'>
-            <p class = 'alinha-centro'>Selecione a frequência da entrega:</p>
-            <form action="">
-                <input type="radio" name="frequencia">
-                <label for="frequencia">Mensal</label>
-                <input type="radio" name="frequencia">
-                <label for="frequencia">Quinzenal</label>
-                <input type="radio" name="frequencia">
-                <label for="frequencia">Semanal</label>
-                <input type="radio" name="frequencia">
-                <label for="frequencia">Compra única</label>
-            </form>
-        </div>
+        
 
         <div id = 'container-endereco'>
             <p class = 'alinha-centro'>Informe seu endereço para a entrega:</p>
