@@ -1,9 +1,17 @@
 
-produtos = [
-    {nome: "Banana", unidade: "cachos", precoPorUnidade: 1.50, classificacao: "fruta"}
+var produtos = [
+    {nome: "Banana", unidade: "cachos", precoPorUnidade: 1.50, classificacao: "fruta"},
+    {nome: "Brócolis", unidade: "kg", precoPorUnidade: 16.82, classificacao: "verdura"},
+    {nome: "Cenoura", unidade: "kg", precoPorUnidade: 3.99, classificacao: "legume"},
+    {nome: "Alface", unidade: "unidade", precoPorUnidade: 2.25, classificacao: "verdura"},
+    {nome: "Tomate", unidade: "kg", precoPorUnidade: 5.75, classificacao: "fruta"},
+    {nome: "Batata", unidade: "kg", precoPorUnidade: 2.50, classificacao: "legume"},
+    {nome: "Pepino", unidade: "kg", precoPorUnidade: 4.20, classificacao: "fruta"},
+    {nome: "Abobrinha", unidade: "kg", precoPorUnidade: 6.30, classificacao: "legume"},
+    {nome: "Espinafre", unidade: "kg", precoPorUnidade: 9.10, classificacao: "verdura"}
 ]
 
-function addProduto(nome, quantidade){
+function addProduto(nome){
     let quanto = document.querySelector("#quanto-"+nome).value;
-    localStorage.setItem(nome, quanto)
+    localStorage.setItem(nome, quanto)  
 }
