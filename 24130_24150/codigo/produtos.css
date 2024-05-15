@@ -159,6 +159,10 @@ main{
     height: 50%;
 }
 
+.produto-info{
+    margin-left: 3px;
+}
+
 .container-adicionar{
     display: flex;
     justify-content: center ;
