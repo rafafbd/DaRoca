@@ -1,4 +1,3 @@
-
 var produtos = [
     {nome: "Banana", unidade: "cachos", precoPorUnidade: 1.50, classificacao: "fruta"},
     {nome: "Brócolis", unidade: "kg", precoPorUnidade: 16.82, classificacao: "verdura"},
@@ -11,13 +10,21 @@ var produtos = [
     {nome: "Espinafre", unidade: "kg", precoPorUnidade: 9.10, classificacao: "verdura"}
 ]
 
-function obtemPreco(nomeProd){
-    let quantidade = localStorage.getItem(nomeProd);
-    let preco;
-    for (let i=0; i < produtos.length(); i++){
-        if (produtos[í].nome == nomeProd){
-            preco = produto[i].precoPorUnidade
-        }
-    }
-    return quantidade * preco
+
+
+for (let i=0; i<produtos.length; i++){
+let write = 
+    "<div class='produto' class='" +produtos[i].classificacao+ "'>"+
+        "<img src='/imagens/brocolis-cabeca.png' alt='' class='imagem-produto'>"+
+        "<div class='produto-info'>"+
+            "<p>NOME: "+produtos[i].nome+"</p>"+
+            "<p>UNIDADE: "+produtos[i].unidade+"</p>"+
+            "<p>PREÇO: "+produtos[i].precoPorUnidade+"</p>"+
+        `</div>
+        <div class='container-adicionar'>
+            <button class = 'botao-adicionar'>Adicionar na cesta</button>`+
+            "<input type='number' class='quantos-itens' id ='quanto-"+produtos[i].nome+"'>"+
+        `</div>
+    </div>`
+    document.write(write)
 }

@@ -11,13 +11,7 @@ var produtos = [
     {nome: "Espinafre", unidade: "kg", precoPorUnidade: 9.10, classificacao: "verdura"}
 ]
 
-function obtemPreco(nomeProd){
-    let quantidade = localStorage.getItem(nomeProd);
-    let preco;
-    for (let i=0; i < produtos.length(); i++){
-        if (produtos[í].nome == nomeProd){
-            preco = produto[i].precoPorUnidade
-        }
-    }
-    return quantidade * preco
+function addProduto(nome){
+    let quanto = document.querySelector("#quanto-"+nome).value;
+    localStorage.setItem(nome, quanto)  
 }
