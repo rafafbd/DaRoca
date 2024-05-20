@@ -67,6 +67,7 @@ main{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    margin: 10px;
 }
 
 #container-barra-pesquisa{
@@ -141,7 +142,7 @@ main{
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: auto;
-    background-color: aliceblue;
+    background-color: beige;
 }
 
 .produto{
@@ -152,6 +153,7 @@ main{
     border-radius: 5px;
     margin-left: 20px;
     width: 20%;
+    margin: 20px;
 }
 
 .imagem-produto{
@@ -160,7 +162,7 @@ main{
 }
 
 .produto-info{
-    margin-left: 3px;
+    text-align: center;
 }
 
 .container-adicionar{
@@ -176,10 +178,13 @@ main{
     background-color: var(--laranja);
     color: var(--verde);
     font-size: large;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .quantos-itens{
     width: 30px;
+    border-radius: 10px;
 }
 
 #container-cesta{
@@ -196,7 +201,7 @@ main{
 
 #botao-cesta{
     background-color: var(--verde);
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
     color: var(--laranja);
     font-size: 20px;
@@ -205,4 +210,5 @@ main{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    height: 60px;
 }
