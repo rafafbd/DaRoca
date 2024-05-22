@@ -32,7 +32,7 @@ function pesquisaTipo(tipo){
     const nav = document.querySelectorAll(".tipo-produto");
     for (let i = 0; i < nav.length; i++) {
         nav[i].style.backgroundColor = '';
-        nav[i].style.borderBottom = 'none';
+        nav[i].style.borderBottom = '';
     }
 
     document.getElementById("tipo-"+tipo).style.backgroundColor = 'lightgray';
