@@ -200,14 +200,14 @@ main{
 }
 
 #botao-cesta{
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
+    bottom: 0;
     background-color: var(--verde);
     border-radius: 10px;
     text-decoration: none;
     color: var(--laranja);
     font-size: 20px;
-    width: 50%;
+    width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
