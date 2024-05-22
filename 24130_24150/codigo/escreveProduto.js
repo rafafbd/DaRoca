@@ -10,11 +10,9 @@ var produtos = [
     {nome: "Espinafre", unidade: "kg", precoPorUnidade: 9.10, classificacao: "verdura"}
 ]
 
-
-
 for (let i=0; i<produtos.length; i++){
 let write = 
-    "<div class='produto' class='" +produtos[i].classificacao+ "'>"+
+    "<div class='produto "+produtos[i].classificacao+ "'>"+
         "<img src='/imagens/brocolis-cabeca.png' alt='' class='imagem-produto'>"+
         "<div class='produto-info'>"+
             "<p>NOME: "+produtos[i].nome+"</p>"+

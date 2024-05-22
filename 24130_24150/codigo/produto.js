@@ -23,8 +23,18 @@ function pesquisaTipo(tipo){
     for (let i = 0; i < produtos.length; i++) {
         produtos[i].style.display = 'none';
     }
+
     const prodTipo = document.querySelectorAll("."+tipo);
     for (let i = 0; i < prodTipo.length; i++) {
-        produtos[i].style.display = 'flex';
+        prodTipo[i].style.display = 'flex';
     }
+    
+    const nav = document.querySelectorAll(".tipo-produto");
+    for (let i = 0; i < nav.length; i++) {
+        nav[i].style.backgroundColor = '';
+        nav[i].style.borderBottom = 'none';
+    }
+
+    document.getElementById("tipo-"+tipo).style.backgroundColor = 'lightgray';
+    document.getElementById("tipo-"+tipo).style.borderBottom = '3px solid rgb(255, 116, 13)';
 }
