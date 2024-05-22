@@ -33,64 +33,13 @@
             </div>
             <div id='container-nav-produto'>
                 <ul id="nav-produto">
-                    <li><a href="#" class='tipo-produto'>Legumes</a></li>
-                    <li><a href="#" class='tipo-produto'>Verduras</a></li>
-                    <li><a href="#" class='tipo-produto'>Frutas</a></li>
+                    <li><a href="#" class='tipo-produto' onclick="pesquisaTipo('legume')">Legumes</a></li>
+                    <li><a href="#" class='tipo-produto' onclick="pesquisaTipo('verdura')">Verduras</a></li>
+                    <li><a href="#" class='tipo-produto' onclick="pesquisaTipo('fruta')">Frutas</a></li>
                 </ul>
             </div>
             <div class='display-produtos'>
                 <script src="escreveProduto.js"></script>
-                <!-- <div class='produto' class='legumes'>
-                    <img src="/imagens/brocolis-cabeca.png" alt="" class='imagem-produto'>
-                    <div class='produto-info'>
-                        <p>NOME: Brócolis</p>
-                        <p>UNIDADE: kg</p>
-                        <p>PREÇO: 10,00</p>
-                    </div>
-                    <div class='container-adicionar'>
-                        <button class = 'botao-adicionar'>Adicionar na cesta</button>
-                        <input type="number" class='quantos-itens' id ='quanto-brocolis'>
-                    </div>
-                </div>
-                <div class='produto' class='legumes'>
-                    <img src="/imagens/Cenoura.png" alt="" class='imagem-produto'>
-                    <div class='produto-info'>
-                        <p>NOME: Cenoura</p>
-                        <p>UNIDADE: unidade</p>
-                        <p>PREÇO: 10,00</p>
-                    </div>
-                    <div class='container-adicionar'>
-                        <button class = 'botao-adicionar'>Adicionar na cesta</button>
-                        <input type="number" class='quantos-itens'>
-                    </div>
-                </div>
-                <div class='produto' class='legumes'>
-                    <img src="/imagens/banana-nanica.png" alt="" class='imagem-produto'>
-                    <div class='produto-info'>
-                        <p>NOME: banana nanica</p>
-                        <p>UNIDADE: unidade</p>
-                        <p>PREÇO: 10,00</p>
-                    </div>
-                    <div class='container-adicionar'>
-                        <button class = 'botao-adicionar'>Adicionar na cesta</button>
-                        <input type="number" class='quantos-itens'>
-                    </div>
-
-                </div>
-                <div class='produto' class='legumes'>
-                    <img src="/imagens/banana-nanica.png" alt="" class='imagem-produto'>
-                    <div class='produto-info'>
-                        <p>NOME: banana nanica</p>
-                        <p>UNIDADE: unidade</p>
-                        <p>PREÇO: 10,00</p>
-                    </div>
-                    <div class='container-adicionar'>
-                        <button class = 'botao-adicionar'>Adicionar na cesta</button>
-                        <input type="number" class='quantos-itens'>
-                    </div>
-
-                </div> -->
-
             </div>
         </div>
         <div id='container-cesta'>
@@ -99,7 +48,7 @@
             </a>
         </div>
     </main>
-
+    <script src="produto.js"></script>
 </body>
 
 </html>

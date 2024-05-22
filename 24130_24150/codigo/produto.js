@@ -13,5 +13,18 @@ var produtos = [
 
 function addProduto(nome){
     let quanto = document.querySelector("#quanto-"+nome).value;
-    localStorage.setItem(nome, quanto)  
+    localStorage.setItem(nome, quanto);
+}
+
+
+function pesquisaTipo(tipo){
+    console.log(tipo);
+    const produtos = document.querySelectorAll(".produto");
+    for (let i = 0; i < produtos.length; i++) {
+        produtos[i].style.display = 'none';
+    }
+    const prodTipo = document.querySelectorAll("."+tipo);
+    for (let i = 0; i < prodTipo.length; i++) {
+        produtos[i].style.display = 'flex';
+    }
 }
