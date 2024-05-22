@@ -200,6 +200,8 @@ main{
 }
 
 #botao-cesta{
+    position: -webkit-sticky;
+    position: sticky;
     background-color: var(--verde);
     border-radius: 10px;
     text-decoration: none;
