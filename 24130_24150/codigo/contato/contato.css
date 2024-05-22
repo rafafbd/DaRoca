@@ -18,7 +18,7 @@ header{
     margin: 0;
     background-color: var(--verde);
 }
-
+header *{flex-wrap: wrap;}
 #conteudo-header{
     display: flex;
     justify-content: space-around;
@@ -68,3 +68,65 @@ header{
     border-radius: 0.938rem;
     font-size: 1.25rem;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#container-tudo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+#mensagem{
+    color: var(--verde);
+}
+
+#formulario{
+    width: 75%;
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#avaliacao{
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#ruim, #neutro, #bom{
+    display: flex;
+}
+
+svg{
+    border-radius: 50%;
+}
+
+h3{
+    color: var(--laranja);
+}
+
+h2{
+    color: beige;
+}
+
+#comentario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#container-textarea{
+    display: flex;
+    justify-content: center;
+}
+
