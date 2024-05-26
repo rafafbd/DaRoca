@@ -99,9 +99,15 @@ main{
 #avaliacao{
     width: 50%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+}
+
+#container-opcoes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
 }
 
 .container-aval{
@@ -135,6 +141,11 @@ h2{
     display: flex;
     justify-content: center;
     margin-bottom: 0.625rem;
+}
+
+textarea{
+    width: 15rem;
+    height: 15rem;
 }
 
 #btn-enviar{
