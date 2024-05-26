@@ -1,11 +1,12 @@
 :root{
     --verde: #013C31;
     --laranja: rgb(255,116,13);
+    --bege: rgb(243, 243, 232);
 }
 
 body{
     margin: 0;
-    background-color: beige;
+    background-color: var(--bege);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 *{
@@ -41,7 +42,7 @@ header{
 }
 
 .item-nav{
-    color: beige;
+    color: var(--bege);
     text-decoration: none;
     font-size: 1.563rem;
 }

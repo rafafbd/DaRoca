@@ -1,11 +1,12 @@
 :root{
     --verde: #013C31;
     --laranja: rgb(255,116,13);
+    --bege: rgb(243, 243, 232);
 }
 
 body{
     margin: 0px;
-    background-color: beige;
+    background-color: var(--bege);
 }
 *{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -32,6 +33,21 @@ header{
 #logo{
     height: 6.25rem;
     margin-left: 0.625rem;
+}
+
+#nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.item-nav{
+    color: var(--bege);
+    text-decoration: none;
+    font-size: 1.563rem;
 }
 
 #container-botoes{
@@ -142,7 +158,7 @@ main{
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: auto;
-    background-color: beige;
+    background-color: var(--bege);
 }
 
 .produto{

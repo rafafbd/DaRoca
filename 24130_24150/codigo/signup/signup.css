@@ -1,6 +1,7 @@
 :root{
     --verde: #013c31;
-    --laranja: rgb(255,116,13)
+    --laranja: rgb(255,116,13);
+    --bege: rgb(243, 243, 232);
 }
 
 
@@ -65,6 +66,6 @@ input[type=email]{
 input[type=text]:focus,
 input[type=password]:focus,
 input[type=email]:focus{
-    background-color: beige
+    background-color: var(--bege);
 }
 
