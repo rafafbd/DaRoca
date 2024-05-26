@@ -1,11 +1,12 @@
 :root{
     --verde: #013C31;
     --laranja: rgb(255,116,13);
+    --bege: rgb(243, 243, 232);
 }
 
 body{
     margin: 0;
-    background-color: beige;
+    background-color: var(--bege);
 }
 
 *{
@@ -41,7 +42,7 @@ header *{flex-wrap: wrap;}
 }
 
 .item-nav{
-    color: beige;
+    color: var(--bege);
     text-decoration: none;
     font-size: 1.563rem;
 }
@@ -91,6 +92,8 @@ main{
     background-color: var(--verde);
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 2rem;
 }
 
 #avaliacao{
@@ -101,8 +104,11 @@ main{
     align-items: center;
 }
 
-#ruim, #neutro, #bom{
+.container-aval{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
 }
 
 svg{
@@ -114,7 +120,7 @@ h3{
 }
 
 h2{
-    color: beige;
+    color: var(--bege);
 }
 
 #comentario{
@@ -128,5 +134,15 @@ h2{
 #container-textarea{
     display: flex;
     justify-content: center;
+    margin-bottom: 0.625rem;
 }
 
+#btn-enviar{
+    background-color: var(--laranja);
+    color: var(--verde);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    width: 10rem;
+    margin-bottom: 1.5rem;
+}
