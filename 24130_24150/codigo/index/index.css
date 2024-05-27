@@ -15,9 +15,15 @@ body{
 
 header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     background-color: var(--verde);
+}
+
+header *{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #conteudo-header{
@@ -117,6 +123,7 @@ main{
 #sobre{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: flex-start;
     width: 80%;
     margin: auto;

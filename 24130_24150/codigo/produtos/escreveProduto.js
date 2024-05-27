@@ -1,4 +1,4 @@
-var produtos = [
+let produtos = [
     {nome: "Banana", unidade: "cachos", precoPorUnidade: 1.50, classificacao: "fruta"},
     {nome: "Brócolis", unidade: "kg", precoPorUnidade: 16.82, classificacao: "verdura"},
     {nome: "Cenoura", unidade: "kg", precoPorUnidade: 3.99, classificacao: "legume"},

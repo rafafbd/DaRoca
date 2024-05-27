@@ -31,6 +31,6 @@ let estados = [
 let opcoes;
 
 for(let i=0;i<estados.length; i++){
-    opcoes += "<option value=;'"+estados[i].sigla + "'>"+estados[i].nome+"<option>"
+    opcoes += "<option value=;'"+estados[i].sigla + "'>"+estados[i].nome+"</option>"
 }
 document.write(opcoes)
