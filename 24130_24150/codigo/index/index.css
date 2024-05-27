@@ -41,6 +41,7 @@ main{
     border: none;
     border-top-right-radius: 0.625rem;
     border-bottom-right-radius: 0.625rem;
+    cursor: pointer;
 }
 
 #sobre{
