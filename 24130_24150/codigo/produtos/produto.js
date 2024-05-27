@@ -31,8 +31,16 @@ var produtos = [
     {nome: "Cacau", unidade: "kg", precoPorUnidade: 10.00, classificacao: "fruta"}
 ];
 
+
+function teste(nome){
+    console.log("certo")
+    addProduto(nome)
+}
+
 function addProduto(nome){
+    console.log("algo")
     let quanto = document.querySelector("#quanto-"+nome).value;
+    console.log(nome)
     localStorage.setItem(nome, quanto);
 }
 

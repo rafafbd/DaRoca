@@ -38,9 +38,9 @@ let write =
             "<p>NOME: "+produtos[i].nome+"</p>"+
             "<p>UNIDADE: "+produtos[i].unidade+"</p>"+
             "<p>PREÇO: "+produtos[i].precoPorUnidade+"R$</p>"+
-        `</div>
-        <div class='container-adicionar'>
-            <button class = 'botao-adicionar'>Adicionar na cesta</button>`+
+        "</div>"+
+        "<div class='container-adicionar'>"+
+            "<button class = 'botao-adicionar' onclick='teste("+produtos[i].nome+")'>Adicionar na cesta</button>"+
             "<input type='number' class='quantos-itens' id ='quanto-"+produtos[i].nome+"'>"+
         `</div>
     </div>`
