@@ -13,13 +13,13 @@ function glow(aval){
     let cor;
     switch (aval){
         case "ruim":
-            cor = "red"
+            cor = "coral"
             break
         case "neutro":
-            cor = "yellow"
+            cor = "goldenrod"
             break
         case "bom":
-            cor = "green"
+            cor = "lightgreen"
     }
     let gradiente = 'radial-gradient('+cor+', #013C31)';
     document.getElementById("icon-"+aval).style.background = gradiente;

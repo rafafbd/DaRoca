@@ -76,6 +76,7 @@ h2{
 textarea{
     width: 15rem;
     height: 15rem;
+    border-radius: 0.5rem;
 }
 
 #btn-enviar{
