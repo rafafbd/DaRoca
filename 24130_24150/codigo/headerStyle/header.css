@@ -1,0 +1,77 @@
+:root{
+    --verde: #013C31;
+    --laranja: rgb(255,116,13);
+    --bege: rgb(243, 243, 232);
+}
+
+body{
+    margin: 0;
+    background-color: var(--bege);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    background-color: var(--verde);
+}
+
+header *{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#conteudo-header{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    width: 70%;
+}
+
+#logo{
+    height: 6.25rem;
+}
+
+#nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.item-nav{
+    color: var(--bege);
+    text-decoration: none;
+    font-size: 1.563rem;
+}
+
+#container-botoes{
+    display: flex;
+    gap: 0.625rem;
+}
+
+#inscrever{
+    text-decoration: none;
+    color: gray;
+    font-size: 1.25rem;
+}
+
+#entrar{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    padding: 0.125rem 0.938rem;
+    border-radius: 0.938rem;
+    font-size: 1.25rem;
+}
