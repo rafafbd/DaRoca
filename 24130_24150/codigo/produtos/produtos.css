@@ -141,6 +141,10 @@ main{
     margin-bottom: 10px;
 }
 
+button{
+    cursor: pointer;
+}
+
 .tipo-produto{
     text-decoration: none;
     color: black;
