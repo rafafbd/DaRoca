@@ -156,7 +156,7 @@ button{
     border-bottom: 3px solid var(--laranja);
 }
 
-.display-produtos{
+#display-produtos{
     width: 80%;
     display: flex;
     flex-flow: row wrap;
