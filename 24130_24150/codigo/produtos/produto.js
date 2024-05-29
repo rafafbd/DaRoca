@@ -41,7 +41,8 @@ function addProduto(nome){
     console.log("algo")
     let quanto = document.querySelector("#quanto-"+nome).value;
     console.log(nome)
-    localStorage.setItem(nome, quanto);
+    localStorage.setItem('nome',nome);
+    localStorage.setItem('quanto', quanto)
 }
 
 
