@@ -21,3 +21,12 @@ function obtemPreco(nomeProd){
     }
     return quantidade * preco
 }
+
+function dadosDoProduto(){
+    var nomeDoProduto = localStorage.getItem("nomeDoProduto");
+    var precoDoProduto = localStorage.getItem("precoDoProduto");
+    console.log(nomeDoProduto, precoDoProduto)
+//       var dadosProduto = document.getElementById("dadosProduto");
+//       dadosProduto.innerHTML = "<p>Nome do Produto: " + nomeDoProduto + "</p>";
+//       dadosProduto.innerHTML += "<p>Preço do Produto: R$" + precoDoProduto + "</p>";
+// }
