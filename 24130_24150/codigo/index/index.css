@@ -6,7 +6,7 @@ main{
 }
 
 #container-barra-pesquisa{
-    width: 50%;
+    max-width: 70%;
     margin-top: 0.625rem;
     display: flex;
     justify-content: center;
@@ -20,12 +20,11 @@ main{
     margin-bottom: 3.125rem;
 }
 #lupa{
-    height: 2.5rem ;
+    max-height: 2.5rem;
 }
 
 #form-pesquisa{
     display: flex;
-    width: 50%;
     padding-right: 20px;
 }
 
@@ -46,19 +45,18 @@ main{
 
 #sobre{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
-    width: 80%;
+    max-width: 80%;
     margin: auto;
 }
 
 #texto{
-    width: 50%;
+    max-width: 50%;
 }
 
 #titulo{
-    width: 70%;
+    max-width: 70%;
     border-bottom: 0.063rem solid black;
 }
 
@@ -72,11 +70,11 @@ span{
 }
 
 #imagem{
-    width: 40%;
+    max-width: 40%;
 }
 
 #foto-da-natalia{
-    height: 100%;
+    min-height:1500px;
 }
 
 footer{
