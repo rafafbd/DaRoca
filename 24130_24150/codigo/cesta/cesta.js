@@ -14,9 +14,9 @@ var produtos = [
 function obtemPreco(nomeProd){
     let quantidade = localStorage.getItem(nomeProd);
     let preco;
-    for (let i=0; i < produtos.length(); i++){
-        if (produtos[í].nome == nomeProd){
-            preco = produto[i].precoPorUnidade
+    for (let i=0; i < produtos.length; i++){
+        if (produtos[i].nome == nomeProd){
+            preco = produtos[i].precoPorUnidade
         }
     }
     return quantidade * preco
@@ -25,15 +25,31 @@ function obtemPreco(nomeProd){
 function dadosDoProduto(){
     //aqui pegamos a lista que foi colocada no localStorage
     var produtosDaCesta = JSON.parse(localStorage.getItem('produtosCesta')) || [];
-
+    precoTotalTodosProdutos = 0.0;
     var dadosDoProduto = document.getElementById("dadosProdutos");
-    dadosDoProduto.innerHTML = "";
+    precoTotalTodosProdutos += precoTotal;
+    var cesta = "<table>";
+    cesta += "<tr><th>Nome</th><th>Quantidade</th><th>Preço total</th><th><tr>";
+
     produtosDaCesta.forEach(function(produto) {
         var precoTotal = obtemPreco(produto.nome);
-        dadosDoProduto.innerHTML += "<p>"+produto.nome+"</p>"+
-                                    "<p>quantidade:" +produto.quantidade+ "</p>"+
-                                    "<p> Preço total:R$" + precoTotal.toFixed(2) + "</p><br>";
-            });
+        precoTotalTodosProdutos += precoTotal;
+        cesta += "<tr><th>"+produto.nome+"</th>"+
+                                    "<th>quantidade:" +produto.quantidade+ "</th>"+
+                                    "<th> Preço total:R$" + precoTotal.toFixed(2) + "</th></tr>";
+    });
+
+            cesta += "<tr><td colspan='2'>Total</td><td>R$ "+precoTotalTodosProdutos.toFixed(2)+"</td></tr>";
+    cesta +="</table>"
+    document.querySelector("#pedido").innerHTML = cesta;
 }
+
+// function escreveLista(){
+//     let cesta = '';
+//     var produtosDaCesta
+//     for (let i=0; i<produtosDaCesta.length; i++)
+//         cesta +="<tr> <th> 
+
+// }
 
 dadosDoProduto()
