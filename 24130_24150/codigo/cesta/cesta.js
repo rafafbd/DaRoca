@@ -23,10 +23,17 @@ function obtemPreco(nomeProd){
 }
 
 function dadosDoProduto(){
-    var nomeDoProduto = localStorage.getItem("nomeDoProduto");
-    var precoDoProduto = localStorage.getItem("precoDoProduto");
-    console.log(nomeDoProduto, precoDoProduto)
-//       var dadosProduto = document.getElementById("dadosProduto");
-//       dadosProduto.innerHTML = "<p>Nome do Produto: " + nomeDoProduto + "</p>";
-//       dadosProduto.innerHTML += "<p>Preço do Produto: R$" + precoDoProduto + "</p>";
-// }
+    //aqui pegamos a lista que foi colocada no localStorage
+    var produtosDaCesta = JSON.parse(localStorage.getItem('produtosCesta')) || [];
+
+    var dadosDoProduto = document.getElementById("dadosProdutos");
+    dadosDoProduto.innerHTML = "";
+    produtosDaCesta.forEach(function(produto) {
+        var precoTotal = obtemPreco(produto.nome);
+        dadosDoProduto.innerHTML += "<p>"+produto.nome+"</p>"+
+                                    "<p>quantidade:" +produto.quantidade+ "</p>"+
+                                    "<p> Preço total:R$" + precoTotal.toFixed(2) + "</p><br>";
+            });
+}
+
+dadosDoProduto()

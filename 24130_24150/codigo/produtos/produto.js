@@ -32,17 +32,25 @@
 // ];
 
 
-function teste(nome){
-    console.log("certo")
-    addProduto(nome)
-}
+function addProduto(nomeDoProduto) {
+    let quantidadeInput = document.getElementById('quanto-' + nomeDoProduto);
+    let quantidade = parseInt(quantidadeInput.value) || 1; //isso faz com que se nenhuma quantidade for selecionada adicionar só 1
+    let produtosDaCesta = JSON.parse(localStorage.getItem('produtosCesta')) || [];
+    // a linha acima recupera os produtos existentes ou inicia uma nova lista
 
-function addProduto() {
-    var nomeDoProduto = document.getElementById("nome").value;
-    var precoDoProduto = document.getElementById("valor").value;
-    console.log(nomeDoProduto,precoDoProduto)
-    // localStorage.setItem("nomeDoProduto", nomeDoProduto);
-    // localStorage.setItem("precoDoProduto", precoDoProduto);
+    let index = produtosDaCesta.findIndex(produto => produto.nome === nomeDoProduto);
+    if (index !== -1) {
+        produtosDaCesta[index].quantidade += quantidade;
+        // se o produto ja foi adicionado a lista só vai atualizar a quantidade ex:
+        //peguei 2kg de batata mas vou pegar mais 2
+        //ent aqui no codigo ao inves de aparecer 2 e outro de 2 vai aparecer como 4 kg de batata
+
+    }
+    localStorage.setItem('produtosCesta', JSON.stringify(produtosDaCesta));
+    //vai salvar a lista ja com as novas modificaçoes no localStorage
+
+    quantidadeInput.value =' '; //zera o campo de quantidade
+
 }
 
 function pesquisaTipo(tipo){

@@ -32,8 +32,8 @@ function exibeProdutos(produtos){
                 "<p>PREÇO: "+produtos[i].valor+"R$</p>"+
             "</div>"+
             "<div class='container-adicionar'>"+
-                "<button class = 'botao-adicionar' onclick='addProduto("+produtos[i].nome+")'>Adicionar na cesta</button>"+
-                "<input type='number' class='quantos-itens' id ='quanto-"+produtos[i].nome+"'>"+
+            "<button class='botao-adicionar' onclick='addProduto(\"" + produtos[i].nome + "\")'>Adicionar na cesta</button>" +
+            "<input type='number' class='quantos-itens' id ='quanto-"+produtos[i].nome+"'>"+
             `</div>
         </div>`
 }
