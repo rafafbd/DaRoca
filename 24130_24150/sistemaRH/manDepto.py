@@ -26,10 +26,7 @@ class FormPrincipal(QMainWindow, Ui_FrmProd):
     def novoRegistro(self):
         self.spbNumProd.setValue(0) # reseta o valor da spinbox chamada spxNumProd
         self.edNomeProd.setText("") # o mesmo
-        self.edNumSegSocial.setText("") # idem
-        self.edDataInicialGerente.setDate(datetime.today()) #
         self.situacao = "incluindo"
-        self.spbNumProd.setReadOnly(False)
         self.spbNumProd.setFocus()
         self.statusBar.showMessage("Digite os dados acima")
 
@@ -48,9 +45,9 @@ class FormPrincipal(QMainWindow, Ui_FrmProd):
                 meuCursor.execute(sComando, 
                 self.edNomeProd.text(), 
                 self.imagem.text(),
-                float(self.spbValor.text()),
+                float(self.spbValor.value()),
                 self.descricaoProd.text(),
-                int(self.spbCategoria.text())
+                int(self.spbCategoria.value())
                 )
                 meuCursor.commit() # enviar as mudanças para o BD
                 self.statusBar.showMessage("Inserido") 
@@ -69,10 +66,10 @@ class FormPrincipal(QMainWindow, Ui_FrmProd):
                 meuCursor.execute(sComando, 
                 self.edNomeProd.text(), 
                 self.imagem.text(),
-                float(self.spbValor.text()),
+                float(self.spbValor.value()),
                 self.descricaoProd.text(),
-                int(self.spbCategoria.text()),
-                int(self.spbNumProd)
+                int(self.spbCategoria.value()),
+                int(self.spbNumProd.value())
                 )
             except Exception as erro: # em caso de erro
                 if hasattr(erro, 'message'):
@@ -132,25 +129,6 @@ class FormPrincipal(QMainWindow, Ui_FrmProd):
                 else:
                     mensagem = erro.args[1]
                 self.statusBar.showMessage(mensagem)
-
-    def buscarDados(self):
-        try:
-            sComando = "SELECT numProd, nomeProd, "+\
-            " gerente_numSegSocial, gerente_dataInicial "+\
-            " FROM Empresa.Departamento "+\
-            " ORDER BY numProd"
-            resultado = meuCursor.execute(sComando)
-            self.osDados = resultado.fetchall() # vetor de registros
-            self.quantosDados = len(self.osDados) # quantos registros
-            if self.quantosDados > 0:
-                self.registroAtual = 0 # posiciona no primeiro índice
-        except:
-            print("Erro ao buscar os dados para navegação.")
-        self.action_Inicio.triggered.connect(self.irAoInicio)
-        self.action_Anterior.triggered.connect(self.irAoAnterior)
-        self.action_Proximo.triggered.connect(self.irAoProximo)
-        self.action_Fim.triggered.connect(self.irAoFim)
-        self.atualizarTela() # exibirá o registro atual da tabela
 
     def sairDoPrograma(self):
         self.close()
