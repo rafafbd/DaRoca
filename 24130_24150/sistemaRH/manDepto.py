@@ -20,7 +20,7 @@ class FormPrincipal(QMainWindow, Ui_FrmProd):
         self.action_Novo.triggered.connect(self.novoRegistro)
         self.action_Editar.triggered.connect(self.editarRegistro)
         self.action_Salvar.triggered.connect(self.salvarRegistro)
-        self.buscarDados()
+
 
 
     def novoRegistro(self):
@@ -154,8 +154,8 @@ if dlgCon.exec() == QDialog.Accepted:
                             uid=f"{dlgCon.edUsuario.text()}",
                             pwd=f"{dlgCon.edSenha.text()}") 
         print("Conexão bem sucedida!")
-        meuCursor = conexao.cursor()  # cursor: objeto de acesso ao BD
-        janela = FormPrincipal()
+        meuCursor = conexao.cursor() # cursor: objeto de acesso ao BD
+        janela = FormPrincipal() 
         aplicacao.exec()
     except:
         print("Não foi possível conectar ao banco de dados")
