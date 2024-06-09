@@ -25,7 +25,7 @@ function exibeProdutos(produtos){
         }
     prod += 
         "<div class='produto "+tipo+ "'>"+
-            "<img src='/imagens/brocolis-cabeca.png' alt='' class='imagem-produto'>"+
+            "<img src='/imagens/" +produtos.imagem+ "' alt='' class='imagem-produto'>"+
             "<div class='produto-info'>"+
                 "<p>NOME: "+produtos[i].nome+"</p>"+
                 // "<p>UNIDADE: "+produtos[i].unidade+"</p>"+
