@@ -1,7 +1,7 @@
 import sys
 from PySide6.QtCore import QtMsgType
 from PySide6.QtWidgets import QApplication, QMainWindow, QStatusBar, QDialog, QTableWidgetItem
-from FrmProd_ui import Ui_FrmProd
+from FrmProduto_ui import Ui_FrmProd
 from FrmConexao_ui import Ui_dlgConectar
 import pyodbc as bd
 from datetime import datetime
