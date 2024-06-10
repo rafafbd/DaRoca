@@ -23,7 +23,7 @@ from PySide6.QtWidgets import (QApplication, QGridLayout, QHeaderView, QLabel,
     QWidget)
 import recursos_rc
 
-class Ui_FrmDepto(object):
+class Ui_FrmProd(object):
     def setupUi(self, FrmDepto):
         if not FrmDepto.objectName():
             FrmDepto.setObjectName(u"FrmDepto")
