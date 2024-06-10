@@ -33,8 +33,9 @@
 
 
 function addProduto(nomeDoProduto) {
-    let quantidadeInput = document.getElementById('quanto-' + nomeDoProduto).value;
+    let quantidadeInput = document.getElementById('quanto-' + nomeDoProduto);
     let quantidade = parseInt(quantidadeInput.value) || 1; //isso faz com que se nenhuma quantidade for selecionada adicionar só 1
+    console.log(quantidadeInput)
     let produtosDaCesta = JSON.parse(localStorage.getItem('produtosCesta')) || [];
     // a linha acima recupera os produtos existentes ou inicia uma nova lista
 
