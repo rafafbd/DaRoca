@@ -33,9 +33,9 @@ function dadosDoProduto(){
     produtosDaCesta.forEach(function(produto) {
         var precoTotal = obtemPreco(produto.nome);
         precoTotalTodosProdutos += precoTotal;
-        cesta += "<tr><th>"+produto.nome+"</th>"+
-                                    "<th>quantidade:" +produto.quantidade+ "</th>"+
-                                    "<th> Preço total:R$" + precoTotal.toFixed(2) + "</th></tr>";
+        cesta += "<tr><td>"+produto.nome+"</td>"+
+                                    "<td>quantidade:" +produto.quantidade+ "</td>"+
+                                    "<td> Preço total:R$" + precoTotal.toFixed(2) + "</td></tr>";
     });
 
             cesta += "<tr><td colspan='2'>Total</td><td>R$ "+precoTotalTodosProdutos.toFixed(2)+"</td></tr>";
