@@ -74,31 +74,6 @@ span{
 }
 
 #foto-da-natalia{
-    min-height:1500px;
+    width: 100%;
 }
 
-footer{
-    background-color: rgb(92, 86, 86);
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
-}
-
-#container-info-footer{
-    width: 60%;
-    display: flex;
-    gap: 0.625rem;
-}
-
-.info-footer{
-    text-decoration: none;
-    color: white;
-}
-
-#redes-sociais{
-    width: 30%;
-}
-
-.logo-rede-social{
-    height: 1.875rem;
-}

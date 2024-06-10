@@ -10,6 +10,7 @@ function buscaProdutos(){
 }
 
 function exibeProdutos(produtos){
+    console.log("oi")
     let prod = "";
     let tipo;
     for (let i=0; i<produtos.length; i++){
@@ -23,9 +24,10 @@ function exibeProdutos(produtos){
             case 3:
                 tipo = 'verdura';
         }
+        console.log(produtos[i].imagem)
     prod += 
         "<div class='produto "+tipo+ "'>"+
-            "<img src='/imagens/" +produtos.imagem+ "' alt='' class='imagem-produto'>"+
+            "<img src='/imagens/" +produtos[i].imagem+ "' alt='' class='imagem-produto'>"+
             "<div class='produto-info'>"+
                 "<p>NOME: "+produtos[i].nome+"</p>"+
                 // "<p>UNIDADE: "+produtos[i].unidade+"</p>"+

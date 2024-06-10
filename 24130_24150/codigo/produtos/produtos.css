@@ -168,6 +168,7 @@ button{
 .produto{
     display: flex;
     justify-content: center;
+    align-items: center ;
     flex-flow: column nowrap;
     border: 3px solid var(--verde) ;
     border-radius: 5px;
@@ -177,8 +178,8 @@ button{
 }
 
 .imagem-produto{
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
 }
 
 .produto-info{
