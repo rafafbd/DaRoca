@@ -38,7 +38,7 @@ class FormPrincipal(QMainWindow, Ui_FrmProd):
 
     def salvarRegistro(self):
         if self.situacao == "incluindo":
-            sComando = "Insert into Empresa.Departamento "+\
+            sComando = "Insert into daroca.produtos "+\
             " (nome, imagem, valor, descricao, categoria) "+\
             " values (?, ?, ?, ?, ?) "
             try: # tente executar o comando abaixo:
