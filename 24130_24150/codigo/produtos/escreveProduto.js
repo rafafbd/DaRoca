@@ -24,7 +24,6 @@ function exibeProdutos(produtos){
             case 3:
                 tipo = 'verdura';
         }
-        console.log(produtos[i].imagem)
     prod += 
         "<div class='produto "+tipo+ "'>"+
             "<img src='/imagens/" +produtos[i].imagem+ "' alt='' class='imagem-produto'>"+

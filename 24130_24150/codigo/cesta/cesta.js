@@ -23,10 +23,11 @@ function obtemPreco(nomeProd){
 }
 
 function dadosDoProduto(){
+    
     //aqui pegamos a lista que foi colocada no localStorage
-    var produtosDaCesta = JSON.parse(localStorage.getItem('produtosCesta')) || [];
+    var produtosDaCesta = JSON.parse(localStorage.getItem('produtosCesta'));
     var precoTotalTodosProdutos = 0.0;
-    var dadosDoProduto = document.getElementById("dadosProdutos");
+    console.log(JSON.parse(localStorage.getItem('produtosCesta')))
     var cesta = "<table>";
     cesta += "<tr><th>Nome</th><th>Quantidade</th><th>Preço total</th><tr>";
 
