@@ -102,7 +102,7 @@ main{
     width: 50%;
 }
 #lupa{
-    height: 40px ;
+    min-height: 2.5rem;
 }
 
 #form-pesquisa{

@@ -20,12 +20,11 @@ main{
     margin-bottom: 3.125rem;
 }
 #lupa{
-    max-height: 2.5rem;
+    min-height: 2.5rem;
 }
 
 #form-pesquisa{
     display: flex;
-    padding-right: 20px;
 }
 
 #barra-pesquisa{
