@@ -12,7 +12,7 @@
 // ]
 
 function obtemPreco(nomeProd){
-    let quantidade = parseInt(localStorage.getItem(nomeProd));
+    let quantidade = parseInt(localStorage.getItem(quantidade));
     let preco;
     for (let i=0; i < produtos.length; i++){
         if (produtos[i].nome == nomeProd){
