@@ -30,8 +30,7 @@ function exibeProdutos(produtos){
             "<img src='/imagens/" +produtos[i].imagem+ "' alt='' class='imagem-produto'>"+
             "<div class='produto-info'>"+
                 "<p>NOME: "+produtos[i].nome+"</p>"+
-                // "<p>UNIDADE: "+produtos[i].unidade+"</p>"+
-                "<p>PREÇO: "+produtos[i].valor+"R$</p>"+
+                "<p>PREÇO: "+produtos[i].valor.toFixed(2).replace(".", ",")+"R$</p>"+
             "</div>"+
             "<div class='container-adicionar'>"+
             "<button class='botao-adicionar' onclick='addProduto(\"" + produtos[i].nome + "\")'>Adicionar na cesta</button>" +
